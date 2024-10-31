@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    border: 1px solid #1C1C1D;
+    border-bottom: 5px solid #1C1C1D;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    color: #1C1C1D;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
