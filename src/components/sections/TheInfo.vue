@@ -1,7 +1,8 @@
 <script>
 import AppCard from "@/components/cards/AppCard.vue";
+import TheCarousel from "@/components/TheCarousel.vue";
 export default {
-  components: {AppCard},
+  components: {AppCard, TheCarousel},
   setup() {
     return {
       cards: [
@@ -10,6 +11,10 @@ export default {
           {id: 2, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
           {id: 3, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
           {id: 4, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 5, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 6, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 7, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 8, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
       ]
     }
   }
@@ -23,11 +28,11 @@ export default {
       <p class="content-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.</p>
     </div>
     <div class="cards">
-      <AppCard v-for="card in cards" :key="card.id" :img="card.img" :title="card.title" :description="card.description" />
+      <TheCarousel :cards="cards"/>
     </div>
-    <div class="switcher">
-      <img src="../../../public/assets/Small.png" alt="switcher">
-    </div>
+<!--    <div class="switcher">-->
+<!--      <img src="../../../public/assets/Small.png" alt="switcher">-->
+<!--    </div>-->
   </div>
 </template>
 
