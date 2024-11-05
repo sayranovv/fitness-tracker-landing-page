@@ -77,6 +77,14 @@
   color: #1C1C1D;
 }
 
+.btn:hover {
+  background-color: #1BDBC4;
+}
+
+.btn:active {
+  border-bottom: 2px solid #1C1C1D;
+}
+
 .btn img {
   width: 25px;
 }
@@ -115,6 +123,45 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  .header-image {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-image {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    position: static;
+    align-items: center;
+  }
+
+  .header-content {
+    padding-bottom: 67px;
+  }
+
+  .header-image {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 600px;
+  }
+  .header-image img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 

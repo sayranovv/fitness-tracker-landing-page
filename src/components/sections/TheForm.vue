@@ -79,7 +79,7 @@ export default {
 .content-buttons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 50px;
 }
 
@@ -91,6 +91,10 @@ export default {
   align-items: center;
   gap: 10px;
   color: white;
+}
+
+.btn:active {
+  border-bottom: 2px solid #1C1C1D;
 }
 
 .btn img {
@@ -172,6 +176,10 @@ export default {
   letter-spacing: 0.5px;
 }
 
+.form-btn:active {
+  border-bottom: 2px solid #1C1C1D;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 80px 30px;
@@ -214,6 +222,27 @@ export default {
   .btn {
     width: 100%;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 80px 60px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-container {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .form-container {
+    margin-right: 0;
+    width: 100%;
   }
 }
 </style>

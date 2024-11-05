@@ -78,7 +78,6 @@ export default {
   font-weight: 700;
   letter-spacing: 0.6px;
   background-color: #fff;
-
 }
 
 .btn-right {
@@ -86,10 +85,19 @@ export default {
   border-top-left-radius: 23px;
   border-right: 1px solid #1C1C1D;
 }
+
+.btn-right:active {
+  border-bottom: 2px solid #1C1C1D;
+}
+
 .btn-left {
   border-bottom-right-radius: 23px;
   border-top-right-radius: 23px;
   border-left: 1px solid #1C1C1D;
+}
+
+.btn-left:active {
+  border-bottom: 2px solid #1C1C1D;
 }
 
 .cards {
@@ -109,6 +117,26 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 80px 60px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 }
 

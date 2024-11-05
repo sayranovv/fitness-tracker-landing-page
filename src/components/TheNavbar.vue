@@ -60,4 +60,10 @@
     margin-left: 35px;
   }
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 60px;
+  }
+}
 </style>

@@ -23,6 +23,7 @@
   padding: 0 120px;
   background-color: #962EFF;
   display: flex;
+  align-items: center;
   gap: 117px;
 }
 
@@ -52,6 +53,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content-form-input {
@@ -73,17 +75,20 @@
   color: #fff;
   max-width: 190px;
   width: 100%;
+  padding: 12px;
+}
+
+.yellow:active {
+  border-bottom: 2px solid #1C1C1D;
 }
 
 .watch-image {
   padding-top: 50px;
   width: 600px;
-  height: 690px;
 }
 
 .watch-image-img {
   width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -114,7 +119,13 @@
     max-width: 100% !important;
     width: 100%;
   }
+}
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 60px;
+    gap: 20px;
+  }
 }
 
 </style>

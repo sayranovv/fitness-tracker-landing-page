@@ -1,7 +1,18 @@
 <script>
 import AppCard from "@/components/cards/AppCard.vue";
 export default {
-  components: {AppCard}
+  components: {AppCard},
+  setup() {
+    return {
+      cards: [
+          {id: 0, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 1, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 2, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 3, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+          {id: 4, img: '../../../public/assets/Group%2015.png', title: 'Nisi ullamco tempor tempor nulla.', description: 'Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.'},
+      ]
+    }
+  }
 }
 </script>
 
@@ -12,11 +23,7 @@ export default {
       <p class="content-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.</p>
     </div>
     <div class="cards">
-      <AppCard />
-      <AppCard />
-      <AppCard />
-      <AppCard />
-      <AppCard />
+      <AppCard v-for="card in cards" :key="card.id" :img="card.img" :title="card.title" :description="card.description" />
     </div>
     <div class="switcher">
       <img src="../../../public/assets/Small.png" alt="switcher">

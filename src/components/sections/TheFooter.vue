@@ -83,4 +83,21 @@ nav ul {
     display: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
 </style>

@@ -49,4 +49,20 @@ export default {
     gap: 40px;
   }
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 150px 60px 120px 60px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .cards {
+    gap: 20px;
+  }
+}
 </style>

@@ -77,5 +77,4 @@ export default {
   width: 100%;
   padding: 17px;
 }
-
 </style>

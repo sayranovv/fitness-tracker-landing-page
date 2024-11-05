@@ -1,5 +1,7 @@
-<script setup>
-
+<script>
+export default {
+  props: ['key', 'img', 'title', 'description'],
+}
 </script>
 
 <template>
@@ -9,11 +11,11 @@
       <img src="../../../public/assets/Group%2015.png" alt="card-image" class="template-card-image">
     </div>
     <div class="card-title">
-      Nisi ullamco tempor tempor nulla.
+      {{ this.title }}
     </div>
   </div>
   <div class="description">
-    Nisi ullamco tempor tempor nulla labore ad labore sit eu duis.
+    {{ this.description }}
   </div>
 </div>
 </template>
