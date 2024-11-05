@@ -177,6 +177,7 @@ export default {
 }
 
 .form-btn:active {
+  margin-top: 33px;
   border-bottom: 2px solid #1C1C1D;
 }
 
@@ -225,7 +226,7 @@ export default {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 768px) {
   .container {
     padding: 80px 60px;
     gap: 40px;

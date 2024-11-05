@@ -84,13 +84,13 @@ nav ul {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .container {
     padding: 40px 60px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 1024px) {
   .container {
     justify-content: center;
     gap: 50px;

@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .navbar {
     padding: 0 60px;
   }

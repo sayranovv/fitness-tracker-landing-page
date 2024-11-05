@@ -50,7 +50,7 @@ export default {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .container {
     padding: 150px 60px 120px 60px;
   }
@@ -60,7 +60,7 @@ export default {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
   .cards {
     gap: 20px;
   }

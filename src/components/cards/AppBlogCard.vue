@@ -69,8 +69,4 @@ export default {
   letter-spacing: 0.5px;
   margin-top: 18px;
 }
-
-@media (max-width: 768px) {
-}
-
 </style>

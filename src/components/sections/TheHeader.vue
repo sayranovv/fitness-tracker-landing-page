@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .container {
     padding: 0 60px;
   }
@@ -136,13 +136,13 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 1024px) {
   .header-image {
     display: none;
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width: 1200px) {
   .container {
     position: static;
     align-items: center;
